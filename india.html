@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>India Map</title>
+    <link rel="stylesheet" href="indiacss.css">
+    
+    
+
+    <Script type="text/javascript" src="https://www.google.com/jsapi"></Script>
+</head>
+<body background="file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/Images/india3.jpg">
+    <header align="center">
+        <a href="#" class="logo">Desi<span>Darshan</span></a>
+        <style>
+            .logo{
+                font-size: 2.1rem;
+                top: -50%;
+                line-height: 1.4;
+                letter-spacing: 0.5rem;
+                text-align: center;
+                color: black;
+                margin-top: 50px;
+            }
+            .button{
+                border: none;
+                position: initial;
+                transform translate(-50%,-50%);
+                top: 50%;
+                left: 50%;
+                padding: 20px 50px;
+                font-size: 80px;
+                font-weight: bold;
+            }
+            
+        </style>
+    </header>
+    <br><br><br>
+    <br><br>
+    <br><br>
+
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/uttar%20pradesh.html'">Uttar Pradesh</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/maharashtra.html'">Maharashtra</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/bihar.html'">Bihar</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/westbengal.html'">West Bengal</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/madhya%20pradesh.html'">Madhya Pradesh</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/tamilnadu.html'">Tamil Nadu</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/rajasthan.html'">Rajasthan</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/karnataka.html'">Karnataka</button> 
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/gujarat.html'">Gujarat</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/andra%20pradesh.html'">Andhra Pradesh</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/orrissa.html'">Orissa</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/telangana.html'">Telangana</button> 
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/kerala.html'">Kerala</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/punjab.html'">Punjab</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/chhattisgarh.html'">Chhattisgarh</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/JammuandKashmir.html'">Jammu and Kashmir</button><br>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/JammuandKashmir.html'">Uttarakhand</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/himachal%20pradesh.html'">Himachal Pradesh</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/tripura.html'">Tripura</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/meghalaya.html'">Meghalaya</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/JammuandKashmir.html'">Manipur</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/JammuandKashmir.html'">Nagaland</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/JammuandKashmir.html'">Goa</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/JammuandKashmir.html'">Arunachal Pradesh</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/JammuandKashmir.html'">Mizoram</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/JammuandKashmir.html'">Sikkim</button>
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/JammuandKashmir.html'">Delhi</button>
+
+    <button type="button" onclick="location.href='file:///C:/Users/preet/OneDrive/Desktop/Project%20Management/JammuandKashmir.html'">Chandigarh</button>
+
+<br><br>
+<br><br>
+    <main id="main">
+        <div align="right">
+            <div id="visualization"></div>
+        </div>
+        
+        <script>
+            google.load('visualization','1',{'packages':['geochart']});
+            google.setOnLoadCallback(drawVisualization);
+
+            function drawVisualization() {
+                var data = google.visualization.arrayToDataTable([
+                    ['State Code', 'State', 'AQI PM2.5'],
+                    ['IN-UP','Uttar Pradesh',780],
+                    ['IN-MH','Maharashtra',920],
+                    ['IN-BR','Bihar',510],
+                    ['IN-WB','West Bengal',620],
+                    ['IN-MP','Madhya Pradesh',700],
+                    ['IN-TN','Tamil Nadu',930],
+                    ['IN-RJ','Rajasthan',1030],
+                    ['IN-KA','Karnataka',1290],
+                    ['IN-GJ','Gujarat',1304],
+                    ['IN-AP','Andhra Pradesh',320],
+                    ['IN-OR','Orissa',133],
+                    ['IN-TG','Telangana',233],
+                    ['IN-KL','Kerala',311],
+                    ['IN-JH','Jharkhand',290],
+                    ['IN-AS','Assam',1220],
+                    ['IN-PB','Punjab',300],
+                    ['IN-CT','Chhattisgarh',1290],
+                    ['IN-HR','Haryana',300],
+                    ['IN-JK','Jammu and Kashmir',0],
+                    ['IN-UT','Uttarakhand',208],
+                    ['IN-HP','Himachal Pradesh',1070],
+                    ['IN-TR','Tripura',301],
+                    ['IN-ML','Meghalaya',210],
+                    ['IN-MN','Manipur',220],
+                    ['IN-NL','Nagaland',201],
+                    ['IN-GA','GOA',1121],
+                    ['IN-AR','Arunachal Pradesh',343],
+                    ['IN-MZ','Mizoram',423],
+                    ['IN-SK','Sikkim',724],
+                    ['IN-DL','Delhi',231],
+                    ['IN-PY','Puducherry',233],
+                    ['IN-CH','Chandigarh',230],
+                    ['IN-AN','Andaman and Nicobar Islands',230],
+                    ['IN-DN','Dadra and Nagar Haveli',230],
+                    ['IN-DD','Daman and Diu',229],
+                    ['IN-LD','Lakshadweep',231],
+
+                ]);
+
+                var opts={
+                    region:'IN',
+                    domain:'IN',
+                    displayMode:'regions',
+                    colorAxis:{colors:['#edb5b2', '#ebcaf8', '#b1d2d4']},
+                    resolution:'provinces',
+                    backgroundColor:'#81d4fa',
+                    defaultColor:'#f5f5f5',
+                    width:940,
+                    height:680,
+
+                };
+
+
+                var geochart = new google.visualization.GeoChart(
+                    document.getElementById('visualization')
+                );
+                geochart.draw(data, opts);
+            };
+        </script>
+
+    </main>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    
+
+    
+</body>
+</html>
